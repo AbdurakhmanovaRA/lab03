@@ -91,7 +91,7 @@ int main() {
 
     // Вывод данных
 
-    show_histogram(bins);
+    show_histogram_txt(bins);
 
     return 0;
 }
