@@ -30,7 +30,7 @@ vector<size_t> make_histogram(vector<double> numbers,size_t count){
 
 void show_histogram_txt(vector<size_t> bins, size_t width){
     const size_t SCREEN_WIDTH = 80;
-    //const size_t MAX_ASTERISK = SCREEN_WIDTH - 4 - 1;
+    const size_t MAX_ASTERISK = SCREEN_WIDTH - 4 - 1;
 
     size_t max_count = 0;
     for (size_t count : bins) {
@@ -40,18 +40,16 @@ void show_histogram_txt(vector<size_t> bins, size_t width){
     }
     const bool scaling_needed = max_count > width;
      for (size_t bin : bins) {
-//        if (bin < 100) {
-//            cout << ' ';
-//        }
-//        if (bin < 10) {
-//            cout << ' ';
-//        }
-//        cout << bin << "|";
+        if (bin < 100) {
+            cout << ' ';
+        }
+        if (bin < 10) {
+            cout << ' ';
+        }
+        cout << bin << "|";
 
         size_t height = bin;
         if (scaling_needed) {
-//            const double scaling_factor = (double)MAX_ASTERISK / max_count;
-//            height = (size_t)(bin * scaling_factor);
             size_t max_count = bins[0];
             for (size_t bin : bins)
             {
