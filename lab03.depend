@@ -10,14 +10,19 @@
 1554111081 source:c:\users\u211-04\desktop\lab03\histogram.cpp
 	"histogram.h"
 
-1555175420 source:e:\regina\МЭИ 1 курс\lab03\histogram.cpp
+1555248019 source:e:\regina\МЭИ 1 курс\lab03\histogram.cpp
 	"histogram.h"
 
 1555175420 e:\regina\МЭИ 1 курс\lab03\histogram.h
 	<vector>
 
-1555243447 source:e:\regina\МЭИ 1 курс\lab03\main.cpp
+1555251716 source:e:\regina\МЭИ 1 курс\lab03\main.cpp
 	<iostream>
 	<vector>
 	"histogram.h"
+	"svg_func.h"
+
+1555251933 e:\regina\МЭИ 1 курс\lab03\svg_func.h
+	<iostream>
+	<vector>
 
