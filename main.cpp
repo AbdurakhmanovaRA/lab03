@@ -50,8 +50,20 @@ void show_histogram_txt(vector<size_t> bins){
 
         size_t height = bin;
         if (scaling_needed) {
-            const double scaling_factor = (double)MAX_ASTERISK / max_count;
-            height = (size_t)(bin * scaling_factor);
+//            const double scaling_factor = (double)MAX_ASTERISK / max_count;
+//            height = (size_t)(bin * scaling_factor);
+            size_t max_count = bins[0];
+            for (size_t bin : bins)
+            {
+                if (bin > max_count)
+                {
+				max_count = bin;
+                }
+            }
+            for (size_t bin : bins)
+            {
+                height = (static_cast<double>(bin) * (double)MAX_ASTERISK / max_count);  //max_asterisk
+            }
         }
 
         for (size_t i = 0; i < height; i++) {
@@ -92,7 +104,7 @@ void show_histogram_svg(const vector<size_t>& bins){
     for (size_t bin : bins) {
         const double bin_width = 10 * bin;
         svg_text(TEXT_LEFT, top + TEXT_BASELINE, to_string(bin));
-        svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "blue", "red");
+        svg_rect(TEXT_WIDTH, top, bin_width, BIN_HEIGHT, "blue", "#0400D1");
         top += BIN_HEIGHT;
     }
     svg_end();
