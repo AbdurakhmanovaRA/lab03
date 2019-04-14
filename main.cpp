@@ -111,10 +111,10 @@ void show_histogram_svg(const vector<size_t>& bins, size_t width){
     }
     const bool scaling_needed = (max_count > width);
 
-    size_t height = bin;
+
     for (size_t bin : bins) {
 
-        //size_t height = bin;
+        size_t height = bin;
         if (scaling_needed) {
             const double scaling_factor = (double)width / max_count;
             height = (size_t)(bin * scaling_factor);
