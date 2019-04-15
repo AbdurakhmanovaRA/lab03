@@ -35,6 +35,8 @@
 		<Unit filename="histogram.cpp" />
 		<Unit filename="histogram.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="svg_func.cpp" />
+		<Unit filename="svg_func.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 #include "histogram.h"
 #include "svg_func.h"
 

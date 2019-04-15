@@ -2,6 +2,7 @@
 #define SVG_FUNC_H_INCLUDED
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 void svg_begin(double width, double height);

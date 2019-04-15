@@ -26,3 +26,22 @@
 	<iostream>
 	<vector>
 
+1555310754 source:c:\users\u211-04\desktop\lab\lab03\histogram.cpp
+	"histogram.h"
+
+1555310754 c:\users\u211-04\desktop\lab\lab03\histogram.h
+	<vector>
+
+1555311727 source:c:\users\u211-04\desktop\lab\lab03\main.cpp
+	<iostream>
+	<vector>
+	"histogram.h"
+	"svg_func.h"
+
+1555310754 c:\users\u211-04\desktop\lab\lab03\svg_func.h
+	<iostream>
+	<vector>
+
+1555315517 source:c:\users\u211-04\desktop\lab\lab03\svg_func.cpp
+	"svg_func.h"
+

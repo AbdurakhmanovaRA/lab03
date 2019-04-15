@@ -1,6 +1,18 @@
 #include "histogram.h"
-
+#include "svg_func.h"
 #include <cassert>
+
+
+//svg_rect ширина и высота не отрицательные
+void test_svg(){
+    double x = 100;
+    double y =0;
+    double width = -20;
+    double height = -30;
+    svg_rect(x, y, width, height);
+    assert(width >= -20);
+    assert (height >= -30);
+}
 
 void
 test_positive() {
@@ -42,11 +54,12 @@ void test_empty(){
     assert(max == 0);
 }
 
-int
-main() {
+
+int main() {
     test_positive();
     test_negative();
     test_samenum();
     test_onenum();
     test_empty();
+    test_svg();
 }

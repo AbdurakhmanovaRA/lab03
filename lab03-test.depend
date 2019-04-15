@@ -19,3 +19,22 @@
 	"histogram.h"
 	<cassert>
 
+1555317681 source:c:\users\u211-04\desktop\lab\lab03\svg_func.cpp
+	"svg_func.h"
+
+1555317445 c:\users\u211-04\desktop\lab\lab03\svg_func.h
+	<iostream>
+	<vector>
+	<cmath>
+
+1555317701 source:c:\users\u211-04\desktop\lab\lab03\test.cpp
+	"histogram.h"
+	"svg_func.h"
+	<cassert>
+
+1555310754 c:\users\u211-04\desktop\lab\lab03\histogram.h
+	<vector>
+
+1555310754 source:c:\users\u211-04\desktop\lab\lab03\histogram.cpp
+	"histogram.h"
+

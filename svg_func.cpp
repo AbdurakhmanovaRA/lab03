@@ -18,10 +18,11 @@ void svg_text(double left, double baseline, string text){
 void svg_rect(double x, double y, double width, double height, string stroke, string fill){
     cout << "<rect x='"<< x << "' y='"<< y << "' width='" << width << "' height='" << height <<"' stroke='"
          << stroke << "' fill='" << fill <<"' />";
+
 }
 
 void show_histogram_svg(const vector<size_t>& bins, size_t width){
-    const auto IMAGE_WIDTH = 400;
+    const auto IMAGE_WIDTH = 1000;
     const auto IMAGE_HEIGHT = 300;
     const auto TEXT_LEFT = 20;
     const auto TEXT_BASELINE = 20;
@@ -36,8 +37,12 @@ void show_histogram_svg(const vector<size_t>& bins, size_t width){
             max_count = bin;
         }
     }
+
+    //cout << "max_count = "<< max_count;
+
     const bool scaling_needed = (max_count > width);
 
+    //cout << "scaling_needed = "<< scaling_needed;
 
     for (size_t bin : bins) {
 
